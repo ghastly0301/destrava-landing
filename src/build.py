@@ -8,7 +8,7 @@ src = HERE / 'copy.json'
 C = json.loads((src if src.exists() else HERE / 'copy_fallback.json').read_text(encoding='utf-8'))
 E = lambda s: html.escape(str(s), quote=True)
 
-WA = '5551995467813'
+WA = '5591985394274'
 MODULES = [
  ('Fundamentos do mercado digital', ['Funcionamento do mercado digital', 'Modelos de negócios', 'Comportamento do consumidor', 'Identificação de oportunidades']),
  ('Infoprodutos', ['O que são infoprodutos', 'Tipos de produtos digitais', 'Criação e validação de ideias', 'Estruturação de ofertas', 'Comercialização']),
@@ -351,7 +351,7 @@ footer li a{display:inline-flex;align-items:center;gap:8px}footer li svg{width:1
 .sticky .btn{min-height:46px;padding:10px 20px;flex:none}
 /* responsivo */
 @media (max-width:1000px){
- .hero .wrap{grid-template-columns:1fr}.viz{height:clamp(300px,70vw,420px);width:min(520px,100%);justify-self:center}
+ .hero .wrap{grid-template-columns:1fr}.viz{height:clamp(380px,70vw,420px);width:min(520px,100%);justify-self:center;margin-bottom:48px}.viz .cap{bottom:auto;top:100%;margin-top:8px}
  .pain .wrap,.who{grid-template-columns:1fr}.outs,.steps{grid-template-columns:repeat(2,1fr)}.steps>*,.steps>:nth-child(4),.steps>:nth-child(5){grid-column:auto}.steps>:nth-child(odd):last-child{grid-column:1/-1}
  .pgrid{grid-template-columns:1fr}.plan.pro{order:-1}.gar{grid-template-columns:auto 1fr}.gar .btn{grid-column:1/-1}}
 @media (max-width:860px){.nav ul{display:none}}
@@ -476,7 +476,7 @@ BODY = r"""
 <footer><div class="wrap">
  <div><a class="brand" href="#top"><i aria-hidden="true"></i>DESTRAVA DIGITAL</a><p class="tag">[[footer.tagline]]</p></div>
  <div><h4>Navegação</h4><ul><li><a href="#metodo">A mentoria</a></li><li><a href="#modulos">Módulos</a></li><li><a href="#planos">Planos</a></li><li><a href="#comparar">Comparação</a></li><li><a href="#faq">Dúvidas</a></li></ul></div>
- <div><h4>Contato</h4><ul><li><a href="https://wa.me/5551995467813" target="_blank" rel="noopener">[[#ico_wa]] João Victor · (51) 99546-7813</a></li><li><a href="https://wa.me/5591985394274" target="_blank" rel="noopener">[[#ico_wa]] Deyvid Rodrigues · (91) 98539-4274</a></li></ul></div>
+ <div><h4>Contato</h4><ul><li><a href="https://wa.me/5591985394274" target="_blank" rel="noopener">[[#ico_wa]] Deyvid Rodrigues · (91) 98539-4274</a></li></ul></div>
  <div class="legal"><span>© <span id="yr">2026</span> Destrava Digital. [[footer.disclaimer]]</span><span><a href="#">Termos de uso</a><a href="#">Política de privacidade</a></span></div>
 </div></footer>
 <div class="sticky" role="region" aria-label="Atalho para os planos"><div class="in">[[#sticky]]<a class="btn hot" href="#planos">Ver os planos</a></div></div>
