@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Destrava Digital | Mentoria de mercado digital em 8 semanas</title>
+<meta name="description" content="Mentoria de 8 semanas para iniciantes: fundamentos, infoprodutos, estrutura digital e tráfego pago, aplicados no seu projeto. Cronograma fixo, grupo de WhatsApp e garantia incondicional de 7 dias. Sem print, sem promessa vazia.">
+<meta name="theme-color" content="#060B16">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='10' fill='%236CB6FF'/%3E%3C/svg%3E">
+<meta property="og:title" content="Destrava Digital | Mentoria de mercado digital em 8 semanas">
+<meta property="og:description" content="Mentoria de 8 semanas para iniciantes: fundamentos, infoprodutos, estrutura digital e tráfego pago, aplicados no seu projeto. Cronograma fixo, grupo de WhatsApp e garantia incondicional de 7 dias. Sem print, sem promessa vazia.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout: editorial escuro, texto alinhado à esquerda, wrap de 1180px; hero em 2 colunas (copy + pilha 3D de entregáveis); o card Pro é o segundo herói */
+:root{color-scheme:dark;
+ --bg:#060B16;--bg-2:#0A1222;--card:#0E1829;--card-2:#13203A;
+ --line:rgba(140,170,255,.13);--line-2:rgba(140,170,255,.26);
+ --fg:#F2F5FB;--mut:#93A0B8;--dim:#5F6C84;--bad:#FF6B6B;
+ --brand:#2B7FFF;--brand-2:#6CB6FF;--brand-ink:#0B2A66;
+ --hot:#FFB224;--hot-2:#FFC94D;--hot-ink:#1A1200;
+ --display:'Sora',system-ui,sans-serif;--body:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+ --wrap:1180px;--gut:max(16px,env(safe-area-inset-left,0px));--gutr:max(16px,env(safe-area-inset-right,0px));
+ --r:14px;--r-lg:22px;--ease:cubic-bezier(.22,1,.36,1)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 1rem/1.6 var(--body);overflow-x:clip}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+img,svg{max-width:100%;display:block}
+h1,h2,h3,h4{font-family:var(--display);margin:0;text-wrap:balance;letter-spacing:-.02em}
+p{margin:0}a{color:inherit}ul{margin:0;padding:0;list-style:none}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--brand-2);outline-offset:3px;border-radius:6px}
+.wrap{width:min(var(--wrap),100%);margin-inline:auto;padding-left:var(--gut);padding-right:var(--gutr)}
+.sec{padding-block:clamp(72px,9vw,120px)}
+.sec.alt{background:var(--bg-2)}
+.head{max-width:740px;display:grid;gap:14px;margin-bottom:clamp(36px,5vw,56px)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--brand-2);font:600 .875rem/1.3 var(--body)}
+.eyebrow::before{content:"";width:22px;height:2px;flex:none;background:var(--brand);border-radius:2px}
+h2{font-size:clamp(1.9rem,3.4vw,2.85rem);font-weight:700;line-height:1.08}
+.lead{color:var(--mut);font-size:clamp(1.02rem,1.4vw,1.15rem);max-width:60ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 26px;border-radius:12px;font:600 1rem/1.2 var(--body);text-align:center;text-decoration:none;border:1px solid var(--line-2);color:var(--fg);background:rgba(255,255,255,.03);transition:transform .25s var(--ease),background .25s,border-color .25s,box-shadow .25s;position:relative;overflow:hidden}
+.btn:hover{transform:translateY(-2px);border-color:var(--brand-2);background:rgba(43,127,255,.12)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.hot{background:var(--hot);color:var(--hot-ink);border-color:transparent;box-shadow:0 10px 30px -10px rgba(255,178,36,.55)}
+.btn.hot:hover{background:var(--hot-2);box-shadow:0 16px 40px -12px rgba(255,178,36,.7)}
+.btn.hot::after{content:"";position:absolute;top:0;bottom:0;width:40%;left:-60%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);animation:shine 4.5s var(--ease) infinite;pointer-events:none}
+@keyframes shine{0%,60%{left:-60%}100%{left:140%}}
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(6,11,22,.55);border-bottom:1px solid transparent;transition:background .3s,border-color .3s}
+.nav.on{background:rgba(6,11,22,.86);border-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:68px}
+.brand{display:inline-flex;align-items:center;gap:10px;font:700 .95rem/1 var(--display);letter-spacing:.08em;text-decoration:none;white-space:nowrap}
+.brand i{width:10px;height:10px;border-radius:50%;background:var(--brand-2);box-shadow:0 0 0 4px rgba(108,182,255,.18),0 0 18px var(--brand-2)}
+.nav ul{display:flex;gap:28px}
+.nav ul a{color:var(--mut);text-decoration:none;font-size:.95rem;transition:color .2s}
+.nav ul a:hover{color:var(--fg)}
+.nav .btn{min-height:42px;padding:8px 18px;font-size:.9rem;white-space:nowrap}
+.prog{position:absolute;left:0;bottom:-1px;height:2px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--brand),var(--brand-2),var(--hot))}
+/* hero */
+.hero{position:relative;overflow:hidden;padding-block:clamp(56px,8vw,110px) clamp(48px,6vw,80px)}
+.hero::before{content:"";position:absolute;inset:-20% -10% auto;height:85%;background:radial-gradient(55% 55% at 72% 35%,rgba(43,127,255,.3),transparent 70%),radial-gradient(35% 40% at 12% 75%,rgba(255,178,36,.09),transparent 70%);filter:blur(12px);pointer-events:none;animation:breathe 9s ease-in-out infinite}
+.hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;-webkit-mask-image:radial-gradient(70% 60% at 50% 20%,#000 20%,transparent 80%);mask-image:radial-gradient(70% 60% at 50% 20%,#000 20%,transparent 80%);opacity:.35;pointer-events:none}
+@keyframes breathe{50%{opacity:.7;transform:scale(1.06)}}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,72px);align-items:center}
+.hero .copy>*{opacity:0;animation:rise .9s var(--ease) forwards}
+.hero .copy .eyebrow{animation-delay:.1s}
+.hero .copy h1{opacity:1;animation:none}
+.hero .copy .lead{animation-delay:.8s;margin-top:22px;max-width:52ch}
+.hero .copy .ctas{animation-delay:.95s}
+.hero .copy .stats{animation-delay:1.15s}
+.hero h1{margin-top:18px;font-size:clamp(2.35rem,5.4vw,4.4rem);font-weight:800;line-height:1.02;letter-spacing:-.035em}
+.hero h1 .w{display:inline-block;opacity:0;transform:translateY(.6em) rotate(2deg);animation:rise .9s var(--ease) forwards;animation-delay:calc(.25s + var(--i)*.055s)}
+@keyframes rise{to{opacity:1;transform:none}}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0 18px;margin-top:44px;border-top:1px solid var(--line)}
+.stat{padding-top:18px;display:grid;gap:4px;align-content:start}
+.stat b{font:700 clamp(1.7rem,2.6vw,2.3rem)/1 var(--display);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.stat span{color:var(--mut);font-size:.85rem;line-height:1.3}
+.viz{position:relative;height:clamp(380px,42vw,520px);perspective:1200px;perspective-origin:50% 40%}
+.stack{position:absolute;inset:0;transform-style:preserve-3d;transform:rotateX(var(--rx,12deg)) rotateY(var(--ry,-16deg));transition:transform .6s var(--ease)}
+.dcard{position:absolute;left:50%;top:46%;width:min(300px,78%);padding:16px 18px;border-radius:16px;background:linear-gradient(160deg,rgba(19,32,58,.96),rgba(14,24,41,.96));border:1px solid var(--line-2);box-shadow:0 30px 60px -30px rgba(0,0,0,.85),inset 0 1px 0 rgba(255,255,255,.06);display:grid;gap:10px;transform:translate(-50%,-50%) translate3d(var(--x),var(--y),var(--z));opacity:0;animation:drop 1s var(--ease) forwards,float 7s ease-in-out infinite;animation-delay:calc(.5s + var(--k)*.22s),calc(1.5s + var(--k)*.5s)}
+@keyframes drop{from{opacity:0;transform:translate(-50%,-50%) translate3d(var(--x),calc(var(--y) + 70px),var(--z))}to{opacity:1;transform:translate(-50%,-50%) translate3d(var(--x),var(--y),var(--z))}}
+@keyframes float{50%{translate:0 -8px}}
+.dc-h{display:flex;align-items:center;gap:10px;font:600 .9rem/1 var(--body)}
+.dc-h .dot{width:8px;height:8px;border-radius:50%;background:var(--brand-2);box-shadow:0 0 12px var(--brand-2)}
+.dc-h em{margin-left:auto;font:500 .72rem/1 var(--body);font-style:normal;color:var(--hot);padding:5px 8px;border-radius:999px;background:rgba(255,178,36,.12)}
+.bar{height:8px;border-radius:4px;background:rgba(140,170,255,.18);transform-origin:0 50%;animation:grow .9s var(--ease) both;animation-delay:calc(1.1s + var(--k)*.22s + var(--j,0)*.1s)}
+.bar.hot{background:var(--hot);height:22px;width:38%;border-radius:7px;margin-top:4px}
+@keyframes grow{from{transform:scaleX(0)}}
+.cols{display:flex;align-items:flex-end;gap:7px;height:56px;margin-top:4px}
+.cols span{flex:1;border-radius:4px 4px 2px 2px;background:linear-gradient(180deg,var(--brand-2),var(--brand));height:var(--h);transform-origin:50% 100%;animation:grow-y 1s var(--ease) both;animation-delay:calc(1.6s + var(--j)*.1s)}
+.cols span:last-child{background:linear-gradient(180deg,var(--hot-2),var(--hot))}
+@keyframes grow-y{from{transform:scaleY(0)}}
+.viz .cap{position:absolute;left:0;right:0;bottom:-10px;text-align:center;color:var(--dim);font-size:.82rem;opacity:0;animation:rise .9s var(--ease) 2s forwards}
+/* ticker */
+.ticker{border-block:1px solid var(--line);background:var(--bg-2);overflow:hidden;padding-block:14px}
+.ticker .track{display:flex;gap:48px;width:max-content;animation:scroll 36s linear infinite}
+.ticker:hover .track{animation-play-state:paused}
+.ticker span{display:inline-flex;align-items:center;gap:14px;color:var(--mut);font:500 .9rem/1 var(--body);white-space:nowrap}
+.ticker span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--hot)}
+@keyframes scroll{to{transform:translateX(-50%)}}
+/* reveals */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.js .rv.on{opacity:1;transform:none}
+.js .rv-g>*{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease),border-color .35s,box-shadow .35s}
+.js .rv-g.on>*{opacity:1;transform:none}
+/* dor */
+.pain .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(32px,5vw,80px);align-items:start}
+.pain h2{font-size:clamp(2rem,4vw,3.3rem);margin-top:14px}
+.pain .ps{display:grid;gap:18px;color:var(--mut);font-size:1.08rem}
+.pain .ps p{padding-left:18px;border-left:2px solid var(--line-2)}
+.punch{margin-top:28px;font:700 clamp(1.3rem,2.2vw,1.7rem)/1.25 var(--display);letter-spacing:-.02em;color:var(--fg);padding:22px 26px;border-radius:var(--r-lg);background:linear-gradient(135deg,rgba(255,178,36,.14),rgba(255,178,36,.03));border:1px solid rgba(255,178,36,.3)}
+/* método */
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pillar{padding:28px;border-radius:var(--r-lg);background:var(--card);border:1px solid var(--line);display:grid;gap:12px;align-content:start;position:relative;overflow:hidden}
+.pillar::before{content:"";position:absolute;right:-20%;bottom:-40%;width:60%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(43,127,255,.22),transparent 65%);pointer-events:none}
+.pillar .ico{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(43,127,255,.14);color:var(--brand-2)}
+.pillar .ico svg{width:22px;height:22px}
+.pillar h3{font-size:1.25rem}
+.pillar p{color:var(--mut)}
+/* módulos */
+.mods{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.mod{grid-column:span 2;padding:26px;border-radius:var(--r-lg);background:var(--card);border:1px solid var(--line);display:grid;gap:10px;align-content:start}
+.mod:nth-child(4),.mod:nth-child(5){grid-column:span 3}
+.mod:hover{border-color:var(--line-2);box-shadow:0 24px 50px -30px rgba(43,127,255,.5)}
+.mod .n{font:700 .8rem/1 var(--display);color:var(--brand-2);letter-spacing:.06em}
+.mod h3{font-size:1.2rem}
+.mod .fact{color:var(--dim);font-size:.85rem;margin-top:-6px}
+.mod p{color:var(--mut)}
+.mod ul{display:grid;gap:8px;margin-top:6px;padding-top:14px;border-top:1px solid var(--line)}
+.mod li{font-size:.92rem;color:var(--mut);padding-left:18px;position:relative}
+.mod li::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:2px;background:var(--brand)}
+/* resultados */
+.outs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.outs li{padding:20px;border-radius:var(--r);background:var(--card);border:1px solid var(--line);font-weight:500;display:grid;grid-template-columns:22px 1fr;gap:12px;align-items:start;line-height:1.45}
+.outs li svg{width:22px;height:22px;color:var(--hot)}
+.note{margin-top:18px;color:var(--dim);font-size:.85rem}
+/* jornada */
+.weeks{display:grid;grid-template-columns:repeat(8,1fr);gap:6px}
+.weeks i{display:block;height:6px;border-radius:3px;background:var(--line-2);transform:scaleX(0);transform-origin:0 50%;transition:transform .6s var(--ease) calc(var(--i)*.12s),background .6s}
+.js .rv:not(.on) .weeks i{transform:scaleX(0)}
+.rv.on .weeks i,.no-js .weeks i{transform:scaleX(1);background:linear-gradient(90deg,var(--brand),var(--brand-2))}
+.weeks-l{display:flex;justify-content:space-between;gap:12px;color:var(--dim);font-size:.8rem;margin:10px 0 28px}
+.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.steps>*{grid-column:span 2}.steps>:nth-child(4),.steps>:nth-child(5){grid-column:span 3}.steps>:nth-child(5):last-child{grid-column:span 3}
+.step{padding:24px;border-radius:var(--r-lg);border:1px solid var(--line);background:var(--card);display:grid;gap:8px;align-content:start}
+.step .n{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:rgba(43,127,255,.15);color:var(--brand-2);font:700 .85rem/1 var(--display)}
+.step h3{font-size:1.08rem}
+.step p{color:var(--mut);font-size:.95rem}
+/* para quem */
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.fit-c{padding:30px;border-radius:var(--r-lg);border:1px solid var(--line);background:var(--card);display:grid;gap:16px;align-content:start}
+.fit-c.no{background:transparent}
+.fit-c h3{font-size:1.25rem}
+.fit-c ul{display:grid;gap:12px}
+.fit-c li{display:grid;grid-template-columns:22px 1fr;gap:12px;color:var(--mut);align-items:start}
+.fit-c li svg{width:22px;height:22px;margin-top:1px}
+.fit-c.yes li svg{color:var(--brand-2)}
+.fit-c.no li svg{color:var(--bad)}
+/* planos */
+.plans .head{max-width:780px}
+.pgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px;align-items:start}
+.plan{position:relative;padding:34px;border-radius:26px;background:var(--card);border:1px solid var(--line);display:grid;gap:20px}
+.plan h3{font-size:1.35rem}
+.plan .tag{color:var(--mut);margin-top:-10px}
+.price b{font:800 clamp(2.4rem,4vw,3.4rem)/1 var(--display);letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.plan ul{display:grid;gap:12px;padding-top:22px;border-top:1px solid var(--line)}
+.plan li{display:grid;grid-template-columns:20px 1fr;gap:12px;align-items:start;font-size:.97rem}
+.plan li svg{width:20px;height:20px;color:var(--brand-2);margin-top:3px}
+.plan .btn{width:100%}
+.incl{color:var(--mut);font-size:.9rem;margin-bottom:-8px}
+.plan.pro{background:linear-gradient(170deg,#13203A,#0C1628);border-color:transparent;isolation:isolate}
+.plan.pro::before{content:"";position:absolute;inset:-1px;border-radius:27px;padding:1.5px;background:conic-gradient(from var(--a),var(--hot),var(--brand) 30%,transparent 55%,var(--brand-2) 80%,var(--hot));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:spin 6s linear infinite;z-index:-1}
+.plan.pro::after{content:"";position:absolute;inset:0;border-radius:26px;box-shadow:0 40px 90px -40px rgba(43,127,255,.6);z-index:-2}
+@property --a{syntax:'<angle>';inherits:false;initial-value:0deg}
+@keyframes spin{to{--a:360deg}}
+.plan.pro li svg{color:var(--hot)}
+.badge{position:absolute;top:-14px;left:34px;background:var(--hot);color:var(--hot-ink);font:700 .78rem/1 var(--body);padding:8px 12px;border-radius:999px}
+.anchor{margin-top:22px;padding:30px 34px;border-radius:26px;border:1px solid rgba(255,178,36,.3);background:linear-gradient(135deg,rgba(255,178,36,.12),rgba(43,127,255,.08));display:grid;grid-template-columns:auto 1fr;gap:20px 36px;align-items:center}
+.anchor .big{font:800 clamp(2.4rem,4.5vw,3.6rem)/1 var(--display);letter-spacing:-.04em;color:var(--hot)}
+.anchor .big small{display:block;font:500 .85rem/1.3 var(--body);color:var(--mut);letter-spacing:0;margin-bottom:8px}
+.anchor ul{display:flex;flex-wrap:wrap;gap:8px}
+.anchor li{padding:7px 12px;border-radius:999px;border:1px solid var(--line-2);font-size:.85rem}
+.anchor p{grid-column:1/-1;color:var(--mut)}
+/* comparação */
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r-lg);background:var(--card)}
+table{width:100%;border-collapse:collapse;min-width:560px;font-size:.95rem}
+th,td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--line)}
+th{font:600 .85rem/1.3 var(--body);color:var(--mut)}
+th.pr,td[data-pr]{background:rgba(43,127,255,.08)}
+th.c,td.c{text-align:center;font-weight:600}
+td.c svg{width:20px;height:20px;margin:0 auto}
+tr.g td{background:var(--bg-2);color:var(--brand-2);font:600 .8rem/1.3 var(--display);letter-spacing:.04em}
+.y{color:var(--brand-2);display:inline-block}.n{color:var(--dim)}
+tbody tr:last-child td{border-bottom:0}
+/* vip */
+.vip-box{display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center;padding:34px;border-radius:26px;border:1px solid var(--line);background:radial-gradient(80% 120% at 0% 50%,rgba(43,127,255,.18),transparent 60%),var(--card)}
+.vip-box .ico{width:64px;height:64px;border-radius:18px;background:rgba(108,182,255,.12);display:grid;place-items:center;color:var(--brand-2)}
+.vip-box .ico svg{width:30px;height:30px}
+.vip-box h2{font-size:clamp(1.5rem,2.6vw,2.1rem);margin:8px 0 10px}
+/* quem */
+.who{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(32px,5vw,72px);align-items:center}
+.who h2{margin:14px 0 18px}
+.who .txt{display:grid;gap:18px;color:var(--mut);font-size:1.05rem}
+.manifesto{font:700 clamp(1.3rem,2vw,1.6rem)/1.3 var(--display);letter-spacing:-.02em;color:var(--fg)}
+.people{display:grid;gap:14px}
+.person{display:flex;align-items:center;gap:16px;padding:18px 20px;border-radius:var(--r-lg);border:1px solid var(--line);background:var(--card)}
+.av{width:52px;height:52px;flex:none;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,var(--brand),var(--brand-ink));font:700 .95rem/1 var(--display);color:#fff}
+.person b{display:block;font-weight:600}.person span{color:var(--mut);font-size:.88rem}
+/* garantia */
+.gar{display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;padding:36px;border-radius:26px;border:1px solid rgba(255,178,36,.35);background:linear-gradient(135deg,rgba(255,178,36,.1),transparent 60%),var(--card)}
+.gar .ico{width:72px;height:72px;border-radius:20px;display:grid;place-items:center;background:rgba(255,178,36,.14);color:var(--hot)}
+.gar .ico svg{width:36px;height:36px}
+.gar h3{font-size:clamp(1.4rem,2.4vw,1.9rem)}
+.gar p{color:var(--mut);margin-top:8px;max-width:60ch}
+/* faq */
+.faqs{max-width:820px;display:grid;gap:10px}
+.fq{border:1px solid var(--line);border-radius:var(--r);background:var(--card);overflow:hidden;transition:border-color .3s}
+.fq.open{border-color:var(--line-2)}
+.fq button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 22px;text-align:left;font:600 1.02rem/1.35 var(--body)}
+.fq button span{flex:1}
+.fq button i{position:relative;width:28px;height:28px;border-radius:50%;border:1px solid var(--line-2);display:grid;place-items:center;flex:none;transition:transform .35s var(--ease),background .3s,border-color .3s}
+.fq button i::before,.fq button i::after{content:"";position:absolute;width:12px;height:2px;background:currentColor;border-radius:2px}
+.fq button i::after{transform:rotate(90deg)}
+.fq.open button i{transform:rotate(45deg);background:rgba(43,127,255,.15);border-color:var(--brand)}
+.fq .a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s var(--ease)}
+.fq .a>div{overflow:hidden}
+.fq .a p{padding:0 22px 20px;color:var(--mut)}
+.fq.open .a{grid-template-rows:1fr}
+/* final */
+.final{position:relative;overflow:hidden;text-align:center}
+.final::before{content:"";position:absolute;inset:0;background:radial-gradient(50% 60% at 50% 100%,rgba(43,127,255,.32),transparent 70%);pointer-events:none}
+.final .wrap{position:relative;display:grid;justify-items:center;gap:20px}
+.final h2{font-size:clamp(2.1rem,4.6vw,3.6rem);max-width:18ch}
+.final .lead{text-align:center}
+.final .ctas{justify-content:center;margin-top:10px}
+/* footer */
+footer{border-top:1px solid var(--line);padding-block:44px 120px;color:var(--mut);font-size:.9rem}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px}
+footer .tag{margin-top:14px;max-width:34ch}
+footer h4{font:600 .85rem/1 var(--body);color:var(--fg);margin-bottom:14px}
+footer ul{display:grid;gap:8px}footer a{text-decoration:none;color:var(--mut)}footer a:hover{color:var(--fg)}
+footer li a{display:inline-flex;align-items:center;gap:8px}footer li svg{width:16px;height:16px}
+.legal{grid-column:1/-1;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;padding-top:22px;border-top:1px solid var(--line);font-size:.82rem;color:var(--dim)}
+.legal span:last-child{display:flex;gap:18px}
+/* barra fixa */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px var(--gutr) calc(10px + env(safe-area-inset-bottom,0px)) var(--gut);background:rgba(6,11,22,.84);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .5s var(--ease)}
+.sticky.show{transform:none}
+.sticky .in{width:min(var(--wrap),100%);margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.sticky .t{font-weight:600;line-height:1.25;white-space:nowrap}.sticky .t small{display:block;color:var(--mut);font-weight:400;font-size:.82rem}
+.sticky .btn{min-height:46px;padding:10px 20px;flex:none}
+/* responsivo */
+@media (max-width:1000px){
+ .hero .wrap{grid-template-columns:1fr}.viz{height:clamp(300px,70vw,420px);width:min(520px,100%);justify-self:center}
+ .pain .wrap,.who{grid-template-columns:1fr}.outs,.steps{grid-template-columns:repeat(2,1fr)}.steps>*,.steps>:nth-child(4),.steps>:nth-child(5){grid-column:auto}.steps>:nth-child(odd):last-child{grid-column:1/-1}
+ .pgrid{grid-template-columns:1fr}.plan.pro{order:-1}.gar{grid-template-columns:auto 1fr}.gar .btn{grid-column:1/-1}}
+@media (max-width:860px){.nav ul{display:none}}
+@media (max-width:720px){
+ .stats{grid-template-columns:repeat(2,1fr);gap:8px 18px}.stat{padding-top:14px}
+ .pillars,.fit,.mods,.steps{grid-template-columns:1fr}.steps>:nth-child(odd):last-child{grid-column:auto}.mod,.mod:nth-child(4),.mod:nth-child(5){grid-column:auto}
+ .anchor,.vip-box,.gar{grid-template-columns:1fr}.gar .ico,.vip-box .ico{width:56px;height:56px}
+ footer .wrap{grid-template-columns:1fr 1fr}.plan{padding:26px}.badge{left:26px}.sticky .t small{display:none}
+ .anchor{padding:24px}.gar{padding:26px}.vip-box{padding:26px}}
+@media (max-width:460px){
+ footer .wrap{grid-template-columns:1fr}.outs{grid-template-columns:1fr}.ctas .btn{width:100%}
+ .hero h1{font-size:clamp(2.1rem,11vw,2.6rem)}.nav .btn{padding:8px 14px}.dcard{width:min(240px,82%);padding:12px 14px}.cols{height:44px}}
+@media (prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ *,*::before,*::after{animation:none!important;transition:none!important}
+ .js .rv,.js .rv-g>*,.hero .copy>*,.hero h1 .w,.viz .cap{opacity:1;transform:none}
+ .dcard,.bar,.cols span{opacity:1}
+ .weeks i,.js .rv:not(.on) .weeks i{transform:scaleX(1);background:linear-gradient(90deg,var(--brand),var(--brand-2))}
+ .prog{display:none}}
+</style>
+</head>
+<body>
+<header class="nav" id="top"><div class="wrap">
+ <a class="brand" href="#top"><i aria-hidden="true"></i>DESTRAVA DIGITAL</a>
+ <ul><li><a href="#metodo">A mentoria</a></li><li><a href="#modulos">Módulos</a></li><li><a href="#planos">Planos</a></li><li><a href="#comparar">Comparação</a></li><li><a href="#faq">Dúvidas</a></li></ul>
+ <a class="btn hot nav-cta" href="#planos">Ver os planos</a>
+ <span class="prog" aria-hidden="true"></span>
+</div></header>
+<main>
+<section class="hero"><div class="wrap">
+ <div class="copy">
+  <span class="eyebrow">Mentoria de mercado digital em 8 semanas</span>
+  <h1>8 semanas para sair da plateia e operar no mercado digital.</h1>
+  <p class="lead">Destrava Digital é uma mentoria de 8 semanas para iniciantes: você aprende a estruturar um infoproduto, montar página, oferta e canal, e planejar e rodar suas primeiras campanhas de tráfego pago no seu projeto. Cronograma fixo, aulas gravadas, grupo de WhatsApp e nenhum print.</p>
+  <div class="ctas"><a class="btn hot" href="#planos">Quero entrar na turma <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="btn" data-wa href="#planos"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg> Tirar dúvidas no WhatsApp</a></div>
+  <div class="stats"><div class="stat"><b data-count="8">8</b><span>semanas, cronograma fixo</span></div><div class="stat"><b data-count="5">5</b><span>módulos</span></div><div class="stat"><b data-count="20">20</b><span>aulas no plano Pro</span></div><div class="stat"><b data-count="7">7</b><span>dias de garantia</span></div></div>
+ </div>
+ <div class="viz" aria-hidden="true"><div class="stack">
+  <div class="dcard" style="--x:-90px;--y:-110px;--z:-80px;--k:0"><div class="dc-h"><span class="dot"></span>Oferta<em>definida</em></div><div class="bar" style="width:78%;--j:0"></div><div class="bar" style="width:52%;--j:1"></div></div>
+  <div class="dcard" style="--x:-30px;--y:-30px;--z:-20px;--k:1"><div class="dc-h"><span class="dot"></span>Página<em>no ar</em></div><div class="bar" style="width:60%;--j:0"></div><div class="bar" style="width:92%;--j:1"></div><div class="bar" style="width:84%;--j:2"></div><div class="bar hot" style="--j:3"></div></div>
+  <div class="dcard" style="--x:40px;--y:50px;--z:40px;--k:2"><div class="dc-h"><span class="dot"></span>Campanha<em>Meta Ads</em></div><div class="bar" style="width:70%;--j:0"></div><div class="bar" style="width:45%;--j:1"></div></div>
+  <div class="dcard" style="--x:100px;--y:130px;--z:100px;--k:3"><div class="dc-h"><span class="dot"></span>Métricas<em>lidas</em></div><div class="cols"><span style="--h:30%;--j:0"></span><span style="--h:45%;--j:1"></span><span style="--h:38%;--j:2"></span><span style="--h:62%;--j:3"></span><span style="--h:55%;--j:4"></span><span style="--h:80%;--j:5"></span><span style="--h:100%;--j:6"></span></div></div>
+ </div><p class="cap">Oferta, página, campanha e métricas: o que você aprende a construir.</p></div>
+</div></section>
+<div class="ticker" aria-hidden="true"><div class="track"><span>Fundamentos do mercado digital</span><span>Infoprodutos</span><span>Estrutura digital</span><span>Tráfego pago</span><span>Crescimento e oportunidades</span><span>15 aulas gravadas</span><span>Grupo no WhatsApp</span><span>Certificado digital</span><span>4 encontros ao vivo no Pro</span><span>Landing page personalizada no Pro</span><span>7 dias de garantia</span><span>Fundamentos do mercado digital</span><span>Infoprodutos</span><span>Estrutura digital</span><span>Tráfego pago</span><span>Crescimento e oportunidades</span><span>15 aulas gravadas</span><span>Grupo no WhatsApp</span><span>Certificado digital</span><span>4 encontros ao vivo no Pro</span><span>Landing page personalizada no Pro</span><span>7 dias de garantia</span></div></div>
+
+<section class="sec pain" id="dor"><div class="wrap">
+ <div class="rv"><span class="eyebrow">Por que agora</span><h2>Você não está atrasado. Você está parado. É pior.</h2></div>
+ <div class="rv"><div class="ps"><p>Você já sabe o que é um infoproduto. Já salvou dezenas de vídeos sobre tráfego pago. Já abriu o Canva, fechou o Canva e abriu outro vídeo. Isso tem nome: consumo. E consumo não paga boleto, não lança produto e não aparece no anúncio de ninguém.</p><p>Enquanto isso, alguém com menos conhecimento do que você publicou uma página feia, rodou o primeiro anúncio com pouco dinheiro e está aprendendo com dados reais. Daqui a seis meses, essa pessoa terá seis meses de erros corrigidos. Você terá seis meses a mais de vídeos assistidos.</p><p>Você acumula abas abertas e a sensação de estar sempre quase pronto. O quase é o lugar mais caro do mercado digital: ninguém manda a conta para você, mas ela cresce todo mês. A diferença entre quem opera e quem assiste não é talento nem sorte. É ter um caminho com ordem, um prazo que não espera e alguém para responder quando você trava.</p></div><p class="punch">Informação você já tem de sobra. O que falta é ordem, prazo e alguém para responder quando você trava.</p></div>
+</div></section>
+
+<section class="sec alt" id="metodo"><div class="wrap">
+ <div class="head rv"><span class="eyebrow">O método</span><h2>Três pilares. Nenhum deles é assistir mais aula.</h2><p class="lead">O método existe para transformar conhecimento em ação dentro de 8 semanas. Cada pilar elimina uma desculpa.</p></div>
+ <div class="pillars rv-g"><article class="pillar"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H4z"/><path d="M20 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8z"/></svg></span><h3>Conhecimento</h3><p>Como os modelos de negócio digitais funcionam de verdade: quem paga, por que paga e onde está a margem. Sem isso, você copia a estratégia dos outros e não entende por que não funciona.</p></article><article class="pillar"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15 9-2 6-4 2 2-6z"/></svg></span><h3>Estratégia</h3><p>Estruturar ofertas, construir produtos e usar tráfego pago com intenção. Decisão vem antes de ferramenta. Você sai com um plano, não com uma pasta de favoritos.</p></article><article class="pillar"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg></span><h3>Aplicação</h3><p>Transformar conhecimento em ação, semana após semana, no seu projeto. Aqui a teoria vira página, oferta e campanha que você mesmo coloca de pé, com o grupo de WhatsApp para destravar dúvidas.</p></article></div>
+</div></section>
+
+<section class="sec" id="modulos"><div class="wrap">
+ <div class="head rv"><span class="eyebrow">O que você aprende</span><h2>Cinco módulos, na ordem exata em que o mercado cobra.</h2><p class="lead">15 aulas gravadas no Essencial, 20 no Pro, em 8 semanas, até duas por semana, liberadas em dias fixos. Você não pula etapa e não trava por falta de base.</p></div>
+ <div class="mods rv-g"><article class="mod"><span class="n">Módulo 01</span><h3>Fundamentos do mercado digital</h3><p>Como o dinheiro circula no digital, quais modelos existem e onde um iniciante tem chance real de entrar. Você para de ver o mercado como mágica e começa a ler como sistema.</p><ul><li>Funcionamento do mercado digital</li><li>Modelos de negócios</li><li>Comportamento do consumidor</li><li>Identificação de oportunidades</li></ul></article><article class="mod"><span class="n">Módulo 02</span><h3>Infoprodutos</h3><p>Como transformar o que você sabe, ou quer aprender, em uma ideia de produto com oferta clara. Com ou sem ideia pronta, o objetivo é você sair daqui com uma no papel.</p><ul><li>O que são infoprodutos</li><li>Tipos de produtos digitais</li><li>Criação e validação de ideias</li><li>Estruturação de ofertas</li><li>Comercialização</li></ul></article><article class="mod"><span class="n">Módulo 03</span><h3>Estrutura digital</h3><p>A estrutura mínima para vender: página, oferta e canal. Sem ferramenta cara, sem funil de 14 etapas, sem esperar o site perfeito.</p><ul><li>Plataformas de venda</li><li>Landing pages</li><li>Checkout</li><li>Ferramentas digitais</li><li>Organização de um negócio</li></ul></article><article class="mod"><span class="n">Módulo 04</span><h3>Tráfego pago</h3><p>Como planejar e rodar suas primeiras campanhas, ler as métricas básicas e decidir o que escalar, corrigir ou matar. Dinheiro em anúncio sem leitura de dados é doação.</p><ul><li>Introdução ao tráfego pago</li><li>Meta Ads</li><li>Públicos e segmentação</li><li>Criativos e campanhas</li><li>Orçamento e métricas</li></ul></article><article class="mod"><span class="n">Módulo 05</span><h3>Crescimento e oportunidades</h3><p>Como posicionar sua oferta, organizar uma rotina de execução e identificar as próximas oportunidades. O programa acaba; o seu trabalho começa.</p><ul><li>Análise de resultados</li><li>Otimização</li><li>Identificação de oportunidades</li><li>Desenvolvimento de projetos</li><li>Próximos passos</li></ul></article></div>
+</div></section>
+
+<section class="sec alt" id="resultados"><div class="wrap">
+ <div class="head rv"><span class="eyebrow">Resultados de aprendizagem</span><h2>O que você vai saber fazer na semana 8</h2></div>
+ <ul class="outs rv-g"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Entender os modelos de negócio digitais e saber em qual você entra.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Estruturar uma ideia de infoproduto, mesmo partindo do zero.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Montar a estrutura digital mínima: página, oferta e canal.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Planejar e rodar campanhas iniciais de tráfego pago.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Ler métricas básicas e decidir com dados, não com achismo.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Posicionar uma oferta para o público certo, com argumento claro.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Organizar uma rotina de execução que sobrevive à semana ruim.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Identificar oportunidades de crescimento que a maioria deixa passar.</span></li></ul>
+ <p class="note">São metas de aprendizado, não resultados financeiros garantidos. O que você constrói com isso depende da sua execução.</p>
+</div></section>
+
+<section class="sec" id="jornada"><div class="wrap">
+ <div class="head rv"><span class="eyebrow">Como funciona</span><h2>8 semanas. Dias fixos. Zero desculpa.</h2><p class="lead">Cinco etapas em 8 semanas, com aulas gravadas liberadas em dias fixos para você manter ritmo sem depender de horário ao vivo. O grupo de WhatsApp fica aberto para dúvidas durante todo o programa.</p></div>
+ <div class="rv"><div class="weeks" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i></div><div class="weeks-l"><span>Semana 1: aulas 1 e 2</span><span>2 aulas gravadas por semana</span><span>Semana 8: aula 15 e fechamento</span></div></div>
+ <div class="steps rv-g"><article class="step"><span class="n">1</span><h3>Entender o jogo</h3><p>Fundamentos do mercado digital. Você aprende como os modelos de negócio funcionam, quem ganha com o quê e onde um iniciante entra. Meta da etapa: clareza de onde está pisando.</p></article><article class="step"><span class="n">2</span><h3>Definir o produto</h3><p>Infoprodutos. Você estrutura sua ideia, com ou sem ponto de partida, e define público, promessa e formato. Meta da etapa: uma oferta clara no papel.</p></article><article class="step"><span class="n">3</span><h3>Colocar no ar</h3><p>Estrutura digital. Você monta página, oferta e canal no mínimo necessário para vender. Meta da etapa: um endereço, não mais um projeto na cabeça.</p></article><article class="step"><span class="n">4</span><h3>Rodar e ler</h3><p>Tráfego pago. Você planeja e roda sua campanha inicial, lê as métricas básicas e decide o que escalar, corrigir ou matar. Meta da etapa: a primeira campanha no ar e dados para decidir.</p></article><article class="step"><span class="n">5</span><h3>Seguir sozinho</h3><p>Crescimento e oportunidades. Você posiciona a oferta, organiza a rotina de execução e identifica as próximas oportunidades. Meta da etapa: rotina montada para continuar sem a gente. Depois, 30 dias de acompanhamento gratuito.</p></article></div>
+</div></section>
+
+<section class="sec alt" id="para-quem"><div class="wrap">
+ <div class="head rv"><span class="eyebrow">Para quem é</span><h2>Para quem é. E para quem não é, sem rodeio.</h2></div>
+ <div class="fit rv-g">
+  <div class="fit-c yes"><h3>É para você se…</h3><ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Você é iniciante e quer entender o mercado digital de verdade, não por recortes de vídeo.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Você tem uma ideia de produto parada e não sabe por onde começar a estruturar.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Você não tem ideia nenhuma, mas quer um processo para encontrar e organizar uma.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Você quer orientação prática, com prazo e alguém para perguntar quando travar.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Você cansou de colecionar cursos e quer aprender fazendo, com cronograma.</span></li></ul></div>
+  <div class="fit-c no"><h3>Não é para você se…</h3><ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Você quer dinheiro rápido. Não existe, e quem promete está vendendo a promessa, não o método.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Você quer resultado garantido. Ninguém honesto garante resultado que depende da sua execução.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Você quer que outra pessoa faça o trabalho por você. Aqui quem faz é você.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Você vai assistir às aulas no modo passivo e procurar um culpado quando nada acontecer.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Você já vende e procura escala avançada. Esta mentoria é para iniciantes.</span></li></ul></div>
+ </div>
+</div></section>
+
+<section class="sec plans" id="planos"><div class="wrap">
+ <div class="head rv"><span class="eyebrow">Planos</span><h2>Dois planos. Preço na página, não no direct.</h2><p class="lead">Nenhum valor escondido, nenhum preço riscado de mentira. Escolha pelo nível de acompanhamento de que você precisa; os dois têm garantia incondicional de 7 dias.</p></div>
+ <div class="pgrid rv-g">
+  <article class="plan"><h3>Plano Essencial</h3><p class="tag">O programa completo para aprender e aplicar com o apoio do grupo.</p><div class="price"><b>R$ 794</b></div><ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>15 aulas gravadas, liberadas em dias fixos</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Grupo de WhatsApp para dúvidas durante o programa</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Suporte durante o programa</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>30 dias de acompanhamento gratuito após o término</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Certificado digital</span></li></ul><a class="btn" data-plan="Essencial" href="#planos">Quero o Essencial por R$ 794</a></article>
+  <article class="plan pro"><span class="badge">Mais completo</span><h3>Plano Pro</h3><p class="tag">Tudo do Essencial, mais acompanhamento direto no seu projeto.</p><div class="price"><b>R$ 1.497</b></div><p class="incl">Tudo do Essencial, mais:</p><ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Tudo do plano Essencial</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>20 aulas no total (5 bônus)</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>4 encontros ao vivo em grupo</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>1 sessão individual de 30 minutos</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Análise personalizada do seu projeto</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Plano de ação de 30 dias</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Feedback estratégico</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Landing page personalizada (não inclui domínio, hospedagem, ferramentas pagas nem integrações avançadas)</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Networking VIP: espaço privado só para alunos Pro</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Biblioteca exclusiva</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Suporte prioritário</span></li></ul><a class="btn hot" data-plan="Pro" href="#planos">Quero o Pro por R$ 1.497 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></article>
+ </div>
+ <div class="anchor rv"><div class="big"><small>A diferença entre os planos é</small>R$ 703</div><ul><li>Sessão individual de 30 min</li><li>Análise personalizada</li><li>Plano de ação de 30 dias</li><li>Feedback estratégico</li><li>Landing page personalizada</li><li>4 encontros ao vivo</li><li>20 aulas (5 bônus)</li><li>Networking VIP</li><li>Biblioteca exclusiva</li></ul><p>Faça a conta. No Essencial, cada aula sai por menos de R$ 53; no Pro, por menos de R$ 75, antes de contar qualquer encontro ao vivo. Os R$ 703 que separam os planos equivalem a menos de R$ 13 por dia ao longo das 8 semanas, menos que um lanche, e compram 5 aulas a mais, 4 encontros ao vivo, 30 minutos individuais, análise do seu projeto, plano de ação de 30 dias e uma landing page personalizada (domínio, hospedagem, ferramentas pagas e integrações avançadas por sua conta). Pagamento online. O Pro tem vagas limitadas por turma: sessão individual e análise personalizada não escalam.</p></div>
+</div></section>
+
+<section class="sec alt" id="comparar"><div class="wrap">
+ <div class="head rv"><span class="eyebrow">Comparação</span><h2>O que muda de um plano para o outro, linha por linha.</h2></div>
+ <div class="tbl rv"><table><thead><tr><th>O que está incluído</th><th class="c">Essencial</th><th class="c pr">Pro</th></tr></thead><tbody><tr class="g"><td colspan="3">Formação e conteúdo</td></tr><tr><td>Total de aulas</td><td class="c">15</td><td data-pr class="c">20</td></tr><tr><td>15 aulas principais gravadas</td><td class="c"><span class="y" aria-label="Incluído"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></span></td><td data-pr class="c"><span class="y" aria-label="Incluído"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></span></td></tr><tr><td>Formação em infoprodutos</td><td class="c"><span class="y" aria-label="Incluído"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></span></td><td data-pr class="c"><span class="y" aria-label="Incluído"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></span></td></tr><tr><td>Conteúdo sobre tráfego pago</td><td class="c"><span class="y" aria-label="Incluído"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></span></td><td data-pr class="c"><span class="y" aria-label="Incluído"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></span></td></tr><tr><td>Estudos de oportunidades de mercado</td><td class="c"><span class="y" aria-label="Incluído"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></span></td><td data-pr class="c"><span class="y" aria-label="Incluído"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></span></td></tr><tr><td>Certificado digital de conclusão</td><td class="c"><span class="y" aria-label="Incluído"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></span></td><td data-pr class="c"><span class="y" aria-label="Incluído"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></span></td></tr><tr class="g"><td colspan="3">Acompanhamento</td></tr><tr><td>Grupo exclusivo no WhatsApp</td><td class="c"><span class="y" aria-label="Incluído"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></span></td><td data-pr class="c"><span class="y" aria-label="Incluído"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></span></td></tr><tr><td>Suporte durante a mentoria</td><td class="c"><span class="y" aria-label="Incluído"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></span></td><td data-pr class="c"><span class="y" aria-label="Incluído"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></span></td></tr><tr><td>30 dias de atendimento após a conclusão</td><td class="c">Gratuito</td><td data-pr class="c">Prioritário</td></tr><tr class="g"><td colspan="3">Direcionamento individual e conexão</td></tr><tr><td>5 aulas bônus exclusivas</td><td class="c"><span class="n" aria-label="Não incluído">—</span></td><td data-pr class="c"><span class="y" aria-label="Incluído"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></span></td></tr><tr><td>Networking VIP exclusivo</td><td class="c"><span class="n" aria-label="Não incluído">—</span></td><td data-pr class="c"><span class="y" aria-label="Incluído"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></span></td></tr><tr><td>4 encontros coletivos ao vivo</td><td class="c"><span class="n" aria-label="Não incluído">—</span></td><td data-pr class="c"><span class="y" aria-label="Incluído"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></span></td></tr><tr><td>Sessão individual de 30 minutos</td><td class="c"><span class="n" aria-label="Não incluído">—</span></td><td data-pr class="c"><span class="y" aria-label="Incluído"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></span></td></tr><tr><td>Análise personalizada</td><td class="c"><span class="n" aria-label="Não incluído">—</span></td><td data-pr class="c"><span class="y" aria-label="Incluído"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></span></td></tr><tr><td>Plano de ação de 30 dias</td><td class="c"><span class="n" aria-label="Não incluído">—</span></td><td data-pr class="c"><span class="y" aria-label="Incluído"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></span></td></tr><tr><td>Feedback estratégico</td><td class="c"><span class="n" aria-label="Não incluído">—</span></td><td data-pr class="c"><span class="y" aria-label="Incluído"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></span></td></tr><tr><td>Biblioteca exclusiva</td><td class="c"><span class="n" aria-label="Não incluído">—</span></td><td data-pr class="c"><span class="y" aria-label="Incluído"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></span></td></tr><tr class="g"><td colspan="3">Implementação</td></tr><tr><td>Landing page personalizada</td><td class="c"><span class="n" aria-label="Não incluído">—</span></td><td data-pr class="c"><span class="y" aria-label="Incluído"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></span></td></tr></tbody></table></div>
+</div></section>
+
+<section class="sec" id="vip"><div class="wrap">
+ <div class="vip-box rv"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17" cy="9" r="3"/><path d="M15.5 14.5A5.5 5.5 0 0 1 21.5 20"/></svg></span><div><span class="eyebrow">Só no Pro</span><h2>Networking VIP: a sala fechada de quem decidiu operar.</h2><p class="lead">Exclusivo do plano Pro: um espaço privado, separado do grupo geral, para trocar com quem está no mesmo cronograma que você, montando produto, subindo página e rodando campanha. Feito para quem tem projeto na mesa e prazo na parede, não para quem entrou só para assistir.</p></div></div>
+</div></section>
+
+<section class="sec alt" id="quem"><div class="wrap"><div class="who">
+ <div class="rv"><span class="eyebrow">Quem está por trás</span><h2>Dois fundadores. Nenhum print, nenhum depoimento. E dizemos isso antes.</h2><div class="txt"><p>João Victor Crestani Castro e Deyvid Rodrigues são dois jovens empreendedores, e o Destrava Digital é o primeiro projeto deles. Não há portfólio de clientes, não há depoimento de aluno e você não vai ver print de faturamento nesta página. Podíamos esconder isso. Preferimos usar como filtro. Qualquer um pode comprar um depoimento; o que não se compra é cronograma cumprido, grupo respondido e projeto analisado de verdade. Você vai avaliar a gente pelo que entregamos nas 8 semanas, não pelo que postamos no feed. Se procura um guru, este não é o lugar. Se procura alguém para destravar junto, é.</p><p class="manifesto">Preferimos perder a venda a mentir para você.</p></div></div>
+ <div class="people rv-g">
+  <div class="person"><span class="av">JC</span><div><b>João Victor Crestani Castro</b><span>Responsável pela Destrava Digital</span></div></div>
+  <div class="person"><span class="av">DR</span><div><b>Deyvid Rodrigues</b><span>Responsável pela Destrava Digital</span></div></div>
+ </div>
+</div></div></section>
+
+<section class="sec" id="garantia"><div class="wrap">
+ <div class="gar rv"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span><div><h3>7 dias. Reembolso integral. Sem perguntas, sem drama.</h3><p>Entre, assista às primeiras aulas, participe do grupo e sinta o ritmo. Se em até 7 dias você concluir que não é para você, peça o reembolso integral e receba tudo de volta, sem justificar. É garantia incondicional, respaldada pelo direito de arrependimento do Código de Defesa do Consumidor (art. 49), e cumprimos sem burocracia. Se nós estivermos errados sobre você, o custo é nosso. Se você estiver errado sobre você, o custo é seu, e ele cresce a cada mês parado.</p></div><a class="btn hot" href="#planos">Quero entrar na turma</a></div>
+</div></section>
+
+<section class="sec alt" id="faq"><div class="wrap">
+ <div class="head rv"><span class="eyebrow">Dúvidas</span><h2>Perguntas que você faria antes de decidir.</h2></div>
+ <div class="faqs rv-g"><div class="fq"><button type="button" aria-expanded="false" aria-controls="fa0" id="fq0"><span>Nunca vendi nada na internet e não tenho ideia de produto. Consigo acompanhar?</span><i aria-hidden="true"></i></button><div class="a" id="fa0" role="region" aria-labelledby="fq0"><div><p>Sim. O programa é para iniciantes, com ou sem ideia. O Módulo 1 começa pelos fundamentos do mercado digital e o Módulo 2 existe para estruturar uma ideia de infoproduto do zero. Quem já tem ideia refina; quem não tem, constrói. O único pré-requisito é disposição para executar.</p></div></div></div><div class="fq"><button type="button" aria-expanded="false" aria-controls="fa1" id="fq1"><span>Como funciona o formato?</span><i aria-hidden="true"></i></button><div class="a" id="fa1" role="region" aria-labelledby="fq1"><div><p>8 semanas, 15 aulas gravadas, até 2 por semana, liberadas em dias fixos. Você assiste no seu horário dentro da semana e tira dúvidas no grupo de WhatsApp durante o programa. No Pro, somam-se 4 encontros ao vivo em grupo e 1 sessão individual de 30 minutos.</p></div></div></div><div class="fq"><button type="button" aria-expanded="false" aria-controls="fa2" id="fq2"><span>Quanto tempo preciso dedicar por semana?</span><i aria-hidden="true"></i></button><div class="a" id="fa2" role="region" aria-labelledby="fq2"><div><p>O tempo das aulas da semana mais o tempo de aplicar no seu projeto. A aula é a parte curta; a execução é o que destrava. Se você não consegue reservar blocos na agenda durante 8 semanas, não compre agora.</p></div></div></div><div class="fq"><button type="button" aria-expanded="false" aria-controls="fa3" id="fq3"><span>Por quanto tempo tenho acesso e suporte?</span><i aria-hidden="true"></i></button><div class="a" id="fa3" role="region" aria-labelledby="fq3"><div><p>Durante as 8 semanas você tem as aulas, o grupo de WhatsApp e o suporte, nos dois planos. Após o término, mais 30 dias de acompanhamento gratuito. No Pro, o suporte é prioritário. Dúvida sobre o acesso às gravações depois desse período? Pergunte no WhatsApp antes de comprar; preferimos responder a prometer.</p></div></div></div><div class="fq"><button type="button" aria-expanded="false" aria-controls="fa4" id="fq4"><span>O que exatamente inclui a landing page personalizada do Pro?</span><i aria-hidden="true"></i></button><div class="a" id="fa4" role="region" aria-labelledby="fq4"><div><p>Uma landing page personalizada para a sua oferta: design personalizado, estrutura responsiva, apresentação da oferta, benefícios, chamadas para ação e uma rodada de ajustes. Não inclui domínio, hospedagem, ferramentas pagas nem integrações avançadas. Esses itens ficam por sua conta.</p></div></div></div><div class="fq"><button type="button" aria-expanded="false" aria-controls="fa5" id="fq5"><span>Tem certificado?</span><i aria-hidden="true"></i></button><div class="a" id="fa5" role="region" aria-labelledby="fq5"><div><p>Sim. Certificado digital nos dois planos. Ele comprova que você passou pelo programa; o que abre portas é a estrutura que você coloca no ar.</p></div></div></div><div class="fq"><button type="button" aria-expanded="false" aria-controls="fa6" id="fq6"><span>Como funciona a garantia?</span><i aria-hidden="true"></i></button><div class="a" id="fa6" role="region" aria-labelledby="fq6"><div><p>7 dias para pedir reembolso integral, sem justificativa. É o direito de arrependimento do Código de Defesa do Consumidor (art. 49), e cumprimos sem burocracia. O que não garantimos é resultado financeiro: quem garante isso está mentindo para você.</p></div></div></div><div class="fq"><button type="button" aria-expanded="false" aria-controls="fa7" id="fq7"><span>Essencial ou Pro: qual escolher?</span><i aria-hidden="true"></i></button><div class="a" id="fa7" role="region" aria-labelledby="fq7"><div><p>Essencial (R$ 794) se você quer o método completo, o grupo e o suporte para executar por conta própria. Pro (R$ 1.497) se você quer acompanhamento direto no seu projeto: 5 aulas bônus, 4 encontros ao vivo, sessão individual de 30 minutos, análise personalizada, plano de ação de 30 dias, landing page personalizada e Networking VIP. A diferença é R$ 703. O Pro tem vagas limitadas por turma, porque sessão individual e análise personalizada não escalam.</p></div></div></div><div class="fq"><button type="button" aria-expanded="false" aria-controls="fa8" id="fq8"><span>Vocês não têm depoimentos. Por que eu confiaria?</span><i aria-hidden="true"></i></button><div class="a" id="fa8" role="region" aria-labelledby="fq8"><div><p>Porque dizemos isso antes de você pagar, não depois. Este é o nosso primeiro projeto, e não vamos inventar aluno nem print para parecer maiores. Avalie o que está na mesa: método, cronograma, suporte e 7 dias para testar tudo com reembolso integral. Se o mercado de promessas vazias cansou você, isso deveria pesar a nosso favor.</p></div></div></div></div>
+</div></section>
+
+<section class="sec final"><div class="wrap rv">
+ <span class="eyebrow">Decida agora</span><h2>Daqui a 8 semanas: operador ou plateia. Você decide.</h2><p class="lead">Turma com cronograma fixo e início definido: as aulas começam a ser liberadas na data marcada, com ou sem você. A garantia de 7 dias cobre o arrependimento; nada cobre mais um ano parado.</p>
+ <div class="ctas"><a class="btn hot" href="#planos">Quero entrar na turma agora <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="btn" data-wa href="#planos"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg> Falar no WhatsApp</a></div>
+</div></section>
+</main>
+<footer><div class="wrap">
+ <div><a class="brand" href="#top"><i aria-hidden="true"></i>DESTRAVA DIGITAL</a><p class="tag">Destrava Digital. De plateia a operador do mercado digital.</p></div>
+ <div><h4>Navegação</h4><ul><li><a href="#metodo">A mentoria</a></li><li><a href="#modulos">Módulos</a></li><li><a href="#planos">Planos</a></li><li><a href="#comparar">Comparação</a></li><li><a href="#faq">Dúvidas</a></li></ul></div>
+ <div><h4>Contato</h4><ul><li><a href="https://wa.me/5551995467813" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg> João Victor · (51) 99546-7813</a></li><li><a href="https://wa.me/5591985394274" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg> Deyvid Rodrigues · (91) 98539-4274</a></li></ul></div>
+ <div class="legal"><span>© <span id="yr">2026</span> Destrava Digital. Programa educacional: não garantimos nenhum resultado financeiro; resultados dependem da sua execução e de fatores fora do nosso controle.</span><span><a href="#">Termos de uso</a><a href="#">Política de privacidade</a></span></div>
+</div></footer>
+<div class="sticky" role="region" aria-label="Atalho para os planos"><div class="in"><div class="t">A partir de R$ 794<small>Turma com início definido · 7 dias de garantia</small></div><a class="btn hot" href="#planos">Ver os planos</a></div></div>
+
+<script>
+(function(){
+/* ===== CAMPOS EDITÁVEIS ===== */
+var CONFIG={linkEssencial:"",linkPro:"",whatsapp:"5551995467813"}; // links de pagamento vazios caem no WhatsApp
+/* ============================ */
+var d=document,root=d.documentElement;root.classList.add('js');
+var rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+var $=function(s,c){return (c||d).querySelector(s)},$$=function(s,c){return [].slice.call((c||d).querySelectorAll(s))};
+var wa=function(t){return 'https://wa.me/'+CONFIG.whatsapp+'?text='+encodeURIComponent(t)};
+$$('[data-plan]').forEach(function(a){var p=a.getAttribute('data-plan'),l=p==='Pro'?CONFIG.linkPro:CONFIG.linkEssencial;a.href=l||wa('Quero garantir o plano '+p+' da Destrava Digital.');a.target='_blank';a.rel='noopener'});
+$$('[data-wa]').forEach(function(a){a.href=wa('Olá! Tenho uma dúvida sobre a Destrava Digital.');a.target='_blank';a.rel='noopener'});
+var h1=$('.hero h1');if(h1){h1.innerHTML=h1.textContent.trim().split(/\s+/).map(function(w,i){return '<span class="w" style="--i:'+i+'">'+w+'</span>'}).join(' ')}
+function count(b){if(b._done||rm)return;b._done=1;var end=parseInt(b.getAttribute('data-count'),10),t0=null,dur=1200;function step(ts){if(!t0)t0=ts;var p=Math.min(1,(ts-t0)/dur);p=1-Math.pow(1-p,3);b.textContent=Math.round(end*p);if(p<1)requestAnimationFrame(step)}requestAnimationFrame(step)}
+setTimeout(function(){$$('.hero [data-count]').forEach(count)},1100);
+function show(el){if(el.classList.contains('on'))return;if(el.classList.contains('rv-g'))[].forEach.call(el.children,function(c,i){c.style.transitionDelay=Math.min(i,10)*70+'ms'});el.classList.add('on');$$('[data-count]',el).forEach(count)}
+var all=$$('.rv,.rv-g');
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){show(en.target);io.unobserve(en.target)}})},{threshold:.12,rootMargin:'0px 0px -6% 0px'});all.forEach(function(el){io.observe(el)});setTimeout(function(){all.forEach(function(el){if(el.getBoundingClientRect().top<innerHeight*1.25)show(el)})},2500)}else{all.forEach(show)}
+addEventListener('beforeprint',function(){all.forEach(show)});
+var nav=$('.nav'),prog=$('.prog'),sticky=$('.sticky'),hero=$('.hero'),planos=$('#planos'),foot=$('footer'),tick=false;
+function onScroll(){tick=false;var y=scrollY,h=root.scrollHeight-innerHeight;nav.classList.toggle('on',y>12);prog.style.transform='scaleX('+(h?y/h:0)+')';var hb=hero.getBoundingClientRect().bottom,pr=planos.getBoundingClientRect(),fr=foot.getBoundingClientRect();var inPlans=pr.top<innerHeight*.6&&pr.bottom>innerHeight*.4;sticky.classList.toggle('show',hb<0&&!inPlans&&fr.top>innerHeight)}
+addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(onScroll)}},{passive:true});onScroll();
+$$('.fq button').forEach(function(b){b.addEventListener('click',function(){var it=b.parentNode,o=it.classList.toggle('open');b.setAttribute('aria-expanded',o)})});
+if(!rm&&matchMedia('(hover:hover) and (pointer:fine)').matches){var st=$('.stack');hero.addEventListener('pointermove',function(e){var r=hero.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;st.style.setProperty('--ry',(-16+x*12)+'deg');st.style.setProperty('--rx',(12-y*10)+'deg')});hero.addEventListener('pointerleave',function(){st.style.removeProperty('--ry');st.style.removeProperty('--rx')})}
+$('#yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
